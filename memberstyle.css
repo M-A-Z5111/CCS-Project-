@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image:url(Lightning-McQueen.jpg);
+    width: fit-content;
+    height: fit-content;
+}
+h1{
+
+       
+        font-size: 20 px;
+        color: rgb(218, 11, 11);
+        -webkit-text-stroke: 0.3vw rgb(218, 11, 11);
+        text-transform: uppercase;
+        }
+        h1::before{
+            content: attr(data-text);
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100% ;
+            height: 100%;
+            color: blanchedalmond;
+            -webkit-text-stroke:  0vw rgb(218, 11, 11);
+             border-right: 0px solid blanchedalmond;
+             overflow: hidden;
+             animation: animate 10s linear infinite;   
+        }
+         @keyframes animate
+        {
+            0%,10%,100%
+            {
+                width: 0%;
+            }
+            70%,90%
+            {
+                width: 100%;
+            }
+        }

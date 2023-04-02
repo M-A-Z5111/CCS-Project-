@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(blue,red);
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    color: blanchedalmond;
+   padding: 10px 20px;
+   background-image: linear-gradient(blue,red);
+}
+h1{
+position: relative;
+font-size: 20 px;
+color: black;
+-webkit-text-stroke: 0.3vw black;
+text-transform: uppercase;
+}
+h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100% ;
+    height: 100%;
+    color: blanchedalmond;
+    -webkit-text-stroke:  0vw black;
+     border-right: 0px solid blanchedalmond;
+     overflow: hidden;
+     animation: animate 10s linear infinite;   
+}
+ @keyframes animate
+{
+    0%,10%,100%
+    {
+        width: 0%;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+li{
+    margin-right: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: blanchedalmond;
+    font-weight: bold;
+}
+nav a:hover{
+    color: blue;
+}
+.First{
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+     background-image: url("all-disney-cars-pictures-disney-pixar-cars-13374926-900-306.jpg");
+    
+    background-size: cover;
+    height: 400px;
+    align-items:center;
+    justify-content:center;
+}
+
+.First h2{
+    font:bolder;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 3em;
+    transform: translateY(-25%);
+    text-transform: uppercase;
+   text-shadow: 0 15px 15 px rgb(0, 0,0,1);
+   mix-blend-mode:difference;
+   box-shadow: 0 15px 15 px rgb(0, 0,0,1);
+background: rgb(0, 0,0,0.2);
+}
+ 
+.First button{
+    background-image: linear-gradient(blue,red);
+    border-radius: 16px ;
+    border: none;
+    padding: 10px 20px;
+    color: blanchedalmond;
+}
+.First button:hover{
+    transform: scale(2,2);
+    z-index: 2px;
+}
+.First button a{
+    text-decoration: none;
+    color: blanchedalmond;
+
+}
+.Second{
+    color: blanchedalmond;
+text-align: center;
+padding: 40px 20px;
+
+}
+.Second h2{
+    padding: 2px 5px;
+
+   margin-bottom: 20px;
+    font-size: 30px;
+ 
+}
+.Second p{
+font-size: 20px;
+margin-bottom: 20px;
+}
+.Second p span{
+    position: relative;
+}
+.Second p span::after{
+content: "";
+position: absolute;
+left: 0;
+height:100%;
+width:100% ;
+background: blueviolet ;
+border-left: 2px solid blanchedalmond;
+animation:  typing 5s steps(10)infinite;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+.Third h2{
+    text-align:center;
+    font-size: 40px;
+    font: bold;
+    padding: 40px 20px;
+    color: blanchedalmond;
+    text-shadow: 0 0 5px blanchedalmond,
+    0 0 10px blanchedalmond,0 0 15 px gold,
+    0 0 20px gold, 0 0 25px gold,
+    0 0 30px gold, 0 0 35px gold;
+    animation: glow 0.5s case-in-out infinite alternate reverse;
+}
+@keyframes glow{
+    100%{
+        text-shadow: 
+        0 0 4px blanchedalmond,
+        0 0 11px blanchedalmond,
+        0 0 19px   blanchedalmond,
+        0 0 40px gold,
+
+        0 0 80px gold,
+        0 0 90px gold,
+
+        0 0 100px gold,
+        0 0 150px gold,
+}
+0%{
+    text-shadow: 
+        0 0 4px blanchedalmond,
+        0 0 10px blanchedalmond,
+        0 0 18px   blanchedalmond,
+        0 0 38px gold,
+
+        0 0 78px gold,
+        0 0 80px gold,
+
+        0 0 94px gold,
+        0 0 140px gold,
+}
+}
+.Images1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    padding: 20px;
+    margin: 50px auto;
+
+}
+.Images2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    padding: 20px;
+    margin: 50px auto;
+
+}
+.alone{
+width: 250px;
+height: 250px;
+margin: 0 10px;
+box-shadow: 0 0 10px 10px;
+  }
+.alone img{
+    display: block;
+    width:250px ;
+    height: 250px;
+    border-radius: 5px;
+}
+.alone:hover{
+    transform: scale(2,2);
+    z-index: 2px;
+}
+.centered{
+    align-items: center;
+padding: 20px 600px;
+
+}
+.centered button{
+    background-image: linear-gradient(gold,violet);
+    border-radius: 16px ;
+    border: none;
+    padding: 10px 10px;
+ 
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+button:hover{
+    transform: scale(2,2);
+    z-index: 2px;
+}
+
+button a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+footer{
+    text-align:center;
+padding: 40px 20px;
+color: blanchedalmond;
+}
+
+
+
